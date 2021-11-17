@@ -36,7 +36,7 @@
   background-size: cover;
 }
 .Jumbo_left_Jumbo_text1 {
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 .Jumbo_left_btns {
@@ -141,6 +141,9 @@
   .Jumbo_left_btns {
     width: 100%;
     margin: 0 0;
+  }
+  .Jumbo_left_Jumbo_text1 {
+    padding-top: 5%;
   }
 
   /*------------------RoadMap starts-----------------*/

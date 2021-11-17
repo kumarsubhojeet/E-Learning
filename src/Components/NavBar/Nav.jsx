@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { Anchor, Drawer, Button } from 'antd';
-import logo from '../../images/Logo.png';
+import { Drawer, Button } from "antd";
+import logo from "../../images/Logo.png";
+import {Link} from "react-router-dom"
 
-const { Link } = Anchor;
+
 
 function AppHeader() {
   const [visible, setVisible] = useState(false);
@@ -20,18 +21,21 @@ function AppHeader() {
     <div className="NavBar">
       <div className="header">
         <div className="logo">
-            <img src={logo} className="Nav_logo" alt="Error" />
+        <Link to="/"><img src={logo} className="Nav_logo" alt="Error" /></Link>
+          
         </div>
         <div className="mobileHidden">
-          <Anchor targetOffset="65">
-            <Link href="#hero" title="Home" />
-            <Link href="#about" title="About" />
-            <Link href="#feature" title="Features" />
-            <Link href="#works" title="How it works" />
-            <Link href="#faq" title="FAQ" />
-            <Link href="#pricing" title="Pricing" />
-            <Link href="#contact" title="Contact" />
-          </Anchor>
+          
+            <section className='NavLinks_PC'>
+            <Link to="/" className="NavLink">Home</Link>
+             <Link className="NavLink" to="/About">About</Link>
+             <Link className="NavLink" to="/Courses">Courses</Link>
+             <Link className="NavLink" to="/FAQ">FAQ</Link>
+             <Link className="NavLink" to="/Contact">Contact</Link>
+             <Link className="NavLink" to="/Signup">Reg</Link>
+             
+            </section>
+         
         </div>
         <div className="mobileVisible">
           <Button type="primary" onClick={showDrawer}>
@@ -43,15 +47,19 @@ function AppHeader() {
             onClose={onClose}
             visible={visible}
           >
-            <Anchor targetOffset="65">
-              <Link href="#hero" title="Home" />
-              <Link href="#about" title="About" />
-              <Link href="#feature" title="Features" />
-              <Link href="#works" title="How it works" />
-              <Link href="#faq" title="FAQ" />
-              <Link href="#pricing" title="Pricing" />
-              <Link href="#contact" title="Contact" />
-            </Anchor>
+           <div className="closing_btn">
+           <i class="fas fa-times Mobile_closing_btn" onClick={onClose}></i>
+           </div>
+           <section className='NavLinks_Mobile'>
+             
+            <Link to="/" className="NavLink_mobile">Home</Link>
+             <Link className="NavLink_mobile" to="/About">About</Link>
+             <Link className="NavLink_mobile" to="/Courses">Courses</Link>
+             <Link className="NavLink_mobile" to="/FAQ">FAQ</Link>
+             <Link className="NavLink_mobile" to="/Contact">Contact</Link>
+             <Link className="NavLink_mobile" to="/Signup">Signup</Link>
+            </section>
+            
           </Drawer>
         </div>
       </div>

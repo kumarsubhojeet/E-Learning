@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "../../Pages/LandingPage/ContactUs.css";
+import "../Contact/Contact.css";
 
 import Phone from "../../img/phone.png";
 import email from "../../img/email.png";

@@ -5,7 +5,6 @@ import YoutubeChannels from '../../Components/LandingPage/YoutubeChannels.jsx'
 import RoadMAps from '../../Components/LandingPage/RoadMap.jsx'
 import Courses from '../../Components/LandingPage/Courses.jsx'
 import Community from '../../Components/LandingPage/Community.jsx'
-import Contact from '../../Components/LandingPage/ContactUs'
 
 export default function Landing() {
   return (
@@ -15,7 +14,6 @@ export default function Landing() {
       <RoadMAps />
       <Courses />
       <Community />
-      <Contact/>
     </>
   );
 }
