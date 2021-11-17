@@ -30,7 +30,7 @@ function AppHeader() {
             <Link to="/" className="NavLink">Home</Link>
              <Link className="NavLink" to="/About">About</Link>
              <Link className="NavLink" to="/Courses">Courses</Link>
-             <Link className="NavLink" to="/FAQ">FAQ</Link>
+             <Link className="NavLink" to="/FAQ">FAQS</Link>
              <Link className="NavLink" to="/Contact">Contact</Link>
              <Link className="NavLink" to="/Signup">Signin</Link>
              
