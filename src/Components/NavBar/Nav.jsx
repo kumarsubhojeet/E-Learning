@@ -32,7 +32,7 @@ function AppHeader() {
              <Link className="NavLink" to="/Courses">Courses</Link>
              <Link className="NavLink" to="/FAQ">FAQ</Link>
              <Link className="NavLink" to="/Contact">Contact</Link>
-             <Link className="NavLink" to="/Signup">Reg</Link>
+             <Link className="NavLink" to="/Signup">Signin</Link>
              
             </section>
          
