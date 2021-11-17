@@ -78,7 +78,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 0px 0;
   }
   
   .header .logo {
@@ -206,7 +206,47 @@ body {
   .mobileHidden {
     display: block;
   }
-  
+  .NavLink{
+    color: black;
+    padding: 5px 16px;
+    font-size: 18px;
+  }
+  .NavLink:hover{
+    color: black;
+    padding: 5px 16px;
+    font-size: 18px;
+    border-left: 1px solid cyan;
+    border-right: 1px solid cyan;
+  }
+  .NavLinks_Mobile{
+    display: flex;
+    flex-direction: column;
+    padding: 23px 0px;
+    text-align: justify;
+    height: auto;
+  }
+  .NavLink_mobile{
+    color: black;
+    padding: 15px 0;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .NavLink_mobile:hover{
+    color: black;
+    padding: 15px 0;
+    font-size: 18px;
+    border-left: 1px solid cyan;
+    border-right: 1px solid cyan;
+  }
+  .closing_btn{
+    text-align: right;
+  }
+  .Mobile_closing_btn{
+    font-size: 26px;
+    color: red;
+
+  }
+ 
   /* 
   responsive
   ----------
